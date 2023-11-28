@@ -1,0 +1,381 @@
+/* Estilos básicos do body */
+body {
+    background-color: var(--bg-color);
+    color: var(--tex-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0; /* Removendo margens */
+    padding: 0; /* Removendo preenchimentos */
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Reset de estilos padrão para elementos HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Definição de variáveis CSS (Root) */
+:root {
+    --bg-color: #101026;
+    --tex-color: #fff;
+    --main-color: #34e7f8;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 2rem;
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0; /* Adicione 'left' para garantir que o cabeçalho ocupe toda a largura */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%; /* Reduza o preenchimento para 10px no topo/bottom e 8% nas laterais */
+    background-color: var(--bg-color);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.menu {
+    display: flex;
+  }
+  
+.nav-button {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+.nav-button:hover {
+    color: rgb(7, 139, 255);
+    transform: translateX(10px);
+    z-index: 2;
+  }
+  
+
+
+
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    font-size: 60px;
+    color: var(--tex-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.header-icons i {
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.header-icons i:hover {
+    transform: translateY(-5px);
+    color: rgb(7, 139, 255);
+}
+
+.section {
+    padding: 0 15%;
+}
+
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-img img {
+    position: absolute;
+    left: 500px;
+    top: 100px; 
+    max-width: 100%;
+    width: 50rem;
+    height: auto;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 2px;
+    position: absolute;
+    left: 750px;
+    top: 650px; 
+}
+
+.home-text p {
+    position: absolute;
+    left: 600px;
+    top: 720px; 
+}
+
+.home-text2 h1 {
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 650px;
+    top: 1050px;
+}
+
+.map {
+    position: absolute;
+    left: 1300px; 
+    top: 1150px; 
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10px;
+}
+
+
+
+.home-text h5 {
+    color: #0026ff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.home-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.home-text h1, .home-text p {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 5s linear forwards, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+}
+
+
+
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 50px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid var(--tex-color); 
+    transition: all 0.55s ease; 
+    color: #fff;
+}
+
+.btn:hover {
+    background: var(--tex-color);
+    color: #000;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main li img{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
+
+.row {
+    background: rgba(37, 112, 161, 0);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.55s ease; 
+    cursor: pointer;
+}
+
+.row:hover {
+    transform: translateX(8px);
+}
+
+
+.bi{
+    font-size: 50px;
+}
+
+.bx {
+    font-size: 50px;
+    background: #0e032c;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.55s ease;
+    cursor: pointer;
+}
+
+.row2 {
+    background: rgba(37, 112, 161, 0);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.55s ease; 
+    cursor: pointer;
+}
+
+.row2:hover {
+    transform: translateY(-8px);
+}
+
+.row3 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.55s ease;
+    cursor: pointer;
+}
+
+.row3:hover {
+    transform: translateY(-8px);
+}
+
+
+.row4 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.55s ease;
+    cursor: pointer;
+}
+
+.row4:hover {
+    transform: translateY(-8px);
+}
+
+.row5 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.55s ease;
+    cursor: pointer;
+}
+
+.row5:hover {
+    transform: translateY(-8px);
+}
+
+
+.image-hover {
+    transition: transform 0.3s; 
+}
+
+.image-hover:hover {
+    background-color:rgb(7, 139, 255);
+    transform: scale(1.1); 
+    z-index: 2; 
+}
+
+.logo{
+    transition: transform 0.3s; 
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+    z-index: 2; 
+    cursor: pointer;
+}
+

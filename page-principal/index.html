@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SITE</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="LOGOTIPO-AZUL.png" class="logo"></img>
+
+        <div class="menu">
+            <button onclick="irinicio()" id="inicio-btn" class="nav-button">Início</button>
+            <button onclick="irsbn()" id="sobre-nos-btn" class="nav-button">Sobre Nós</button>
+            <button onclick="ircontact()" id="contato-btn" class="nav-button">Contato</button>
+        </div>
+
+
+        <div class="header-icons">
+            <i class='bi bi-whatsapp'></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="casa.webp" class="one">
+        </div>
+
+        <div class="home-text">
+            <h1 id="image-title">Autenticidade</h1>
+            <p id="image-description">Elevando a excelência em imóveis de alto padrão,<br>
+                unindo sofisticação arquitetônica e qualidade<br>
+                construtiva em cada projeto.</p>
+        </div>
+    </section>
+
+    <div class="main">
+        <div class="row1">
+            <li><i class='bx bx-home image-hover'
+                    onclick="slider('casa.webp', 'Autenticidade', 'Elevando a excelência em imóveis de alto padrão,\nunindo sofisticação arquitetônica e qualidade \nconstrutiva em cada projeto.')"></i>
+            </li>
+        </div>
+
+        <div class="row2">
+            <li><i class='bx bx-globe image-hover'
+                    onclick="slider('inova.jpg', 'Inovação', 'Na Anise a realidade virtual é utilizada em diversas funções, \ndesde treinamentos, compatibilização de projetos, verificação de estruturas \naté para apresentar ambientes aos clientes.')"></i>
+            </li>
+        </div>
+
+        <div class="row3">
+            <li>
+                <i class='bx bx-sun image-hover'
+                    onclick="slider('piscina.jpeg', 'Piscinas e Spas', 'A construção de piscinas oferece inúmeras vantagens para aqueles \nque desejam desfrutar de um oásis aquático em seu próprio quintal.\nCombinando habilidades técnicas e criatividade, trabalhamos para \ntransformar espaços vazios em áreas de lazer exuberantes.')"></i>
+            </li>
+        </div>
+
+        <div class="row4">
+            <li>
+                <i class='bx bx-landscape image-hover'
+                    onclick="slider('paisagem.webp', 'Paisagismo', 'Transforme sua casa em um verdadeiro paraíso com paisagismo \nexclusivo onde cada elemento natural é cuidadosamente projetado \npara refletir o luxo e a sofisticação do seu lar de alto padrão.')"></i>
+            </li>
+        </div>
+
+        <div class="row5">
+            <li>
+                <i class='bx bx-paint-roll image-hover'
+                    onclick="slider('interior.webp', 'Interiores', 'Encante seus sentidos com interiores de tirar o fôlego, onde a \nharmonia dos materiais nobres e o requinte dos detalhes \ntransformam sua casa de alto padrão em um refúgio de luxo e conforto.')"></i>
+            </li>
+        </div>
+
+
+
+        <script  type="text/JavaScript"  src="script.js"></script>
+</body>
+
+</html>

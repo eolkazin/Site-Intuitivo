@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root {
+    --bg-color: #1d2631;
+    --tex-color: #fff;
+    --main-color: #34e7f8;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 2rem;
+}
+
+body {
+    background-color: #101026;
+    color: var(--tex-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    background-color: #101026;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.menu {
+    display: flex;
+  }
+  
+.nav-button {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+.nav-button:hover {
+    color: rgb(7, 139, 255);
+    transform: translateX(10px);
+    z-index: 2;
+  }
+  
+
+
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    font-size: 60px;
+    color: var(--tex-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.header-icons i {
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.header-icons i:hover {
+    transform: translateY(-5px);
+    color: rgb(7, 139, 255);
+}
+
+.section {
+    padding: 0 15%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 5px;
+    position: absolute; /* Posição absoluta */
+    left: 50px; /* Ajuste a posição à esquerda conforme necessário */
+    top: 360px; /* Ajuste a posição superior conforme necessário */
+}
+
+.home-text p {
+    position: absolute; /* Posição absoluta */
+    left: 50px; /* Ajuste a posição à esquerda conforme necessário */
+    top: 450px; /* Ajuste a posição superior conforme necessário */
+}
+
+
+.home-text h5 {
+    color: #0026ff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.home-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 50px;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid var(--tex-color); 
+    transition: all 0.55s ease; 
+    color: #fff;
+}
+
+.btn:hover {
+    background: var(--tex-color);
+    color: #000;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main li img{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+
+.logo{
+    transition: transform 0.3s; 
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+    z-index: 2; 
+    cursor: pointer;
+}
+
+
+
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 150vh;
+    padding: 5px 20px;
+    width: 20px;
+    left: 200px;
+    top: 200px;
+}
+
+section h2{
+    color: #f5f5f5;
+    font-size: 4rem;
+    margin: 2rem;
+    min-width: 150vh;
+    min-height: 2vh;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+form input {
+    background-color: #0000ff00;
+    padding: 8px 10px;
+    outline: none;
+    border: 1;
+    border-color: #f5f5f5;
+    margin-bottom: 3px;
+    font-size: 14px;
+    transition: all 0.5s;
+    width: 500px;
+    color: #f5f5f5;
+}
+
+from input text{
+    color: #aaa;
+}
+
+form input:focus {
+    border-radius: 10px;
+}
+
+form textarea {
+    background-color: #10102600;
+    padding: 8px;
+    outline: none;
+    border: 1;
+    border-color: #f5f5f5;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    width: 500px;
+    color: #f5f5f5;
+}
+
+form textarea:focus {
+    border-radius: 10px;
+}
+
+form button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid #a8a8e9;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+form button:hover {
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 10px;
+}
+
+
+
+
+
+.fale-conosco {
+    position: fixed;
+    top: 170px; /* Ajuste a distância a partir do topo conforme necessário */
+    right: 100px; /* Ajuste a distância a partir da direita conforme necessário */
+    left: 600px;
+}
+
+
+.fale-conosco h3 {
+    font-size: 4rem; /* Tamanho da fonte do título */
+    color: #f5f5f5; /* Cor do título */
+    margin: 0;
+    min-width: 10vh;
+    min-height: 1vh;
+}
+
+.fale-conosco p {
+    text-align: center;
+    font-size: 15px; /* Tamanho da fonte para os parágrafos */
+    color: #ffffff; /* Cor do texto dos parágrafos */
+}
+
+
+.fale-conosco li  {
+    text-align: center;
+    font-size: 35px; /* Tamanho da fonte para os itens da lista */
+    color: #ffffff; /* Cor do texto dos itens da lista */
+    list-style: none; /* Remover marcadores de lista padrão */
+    margin: 5px 0; /* Ajuste a margem conforme necessário (topo e base) */
+}
+
+.fale-conosco .bi {
+    font-size: 2rem;
+    color: rgb(7, 139, 255); /* Tamanho desejado para os ícones */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Página do Obrigado */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 175vh;
+    background: #101026;
+}
+
+.text {
+    font-size: 80px;
+    color: #f5f5f5;
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+.paragrafo {
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 20px; /* Reduzi a margem para um espaçamento menor */
+    text-align: center; /* Centraliza o parágrafo horizontalmente */
+}
+
+.btn {
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+    display: inline-block;
+    margin-top: 20px; /* Adicione margem superior para separar o botão */
+}
+
+.btn:hover {
+    background:#a8a8e9 ;
+    color: #f5f5f5;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
